@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Mood & Song Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🎵 AI Mood & Caption Generator</h1>
+  <p>Upload an image and get mood, caption, and song suggestions!</p>
+
+  <input type="file" id="imageInput" accept="image/*">
+  <select id="languageSelect">
+    <option value="" disabled selected>Select Song Language 🎧</option>
+    <option value="english">English</option>
+    <option value="hindi">Hindi</option>
+    <option value="kannada">Kannada</option>
+    <option value="tamil">Tamil</option>
+    <option value="telugu">Telugu</option>
+  </select>
+  <button id="generateBtn">✨ Generate</button>
+
+  <img id="preview" src="" alt="Image Preview">
+
+  <div id="resultBox">
+    <h3>✨ AI Results</h3>
+    <p><b>Mood:</b> <span id="moodText"></span></p>
+    <p><b>Caption:</b> <span id="captionText"></span></p>
+    <p><b>🎶 Suggested Song:</b> <span id="songText"></span></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
